@@ -26,6 +26,10 @@ struct TodoListView: View {
                 
                 List {
                     
+                    Text("Study for Chemistry quiz")
+                    Text("Finish Computer Science assignent")
+                    Text("Go for a run around campus")
+                    
                 }
                 .searchable(text:$searchText)
                 
