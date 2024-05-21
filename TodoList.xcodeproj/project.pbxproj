@@ -8,17 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		DF7831C82BFCD20F00AC89EB /* TodoListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7831C72BFCD20F00AC89EB /* TodoListApp.swift */; };
-		DF7831CA2BFCD20F00AC89EB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7831C92BFCD20F00AC89EB /* ContentView.swift */; };
 		DF7831CC2BFCD21100AC89EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF7831CB2BFCD21100AC89EB /* Assets.xcassets */; };
 		DF7831CF2BFCD21100AC89EB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF7831CE2BFCD21100AC89EB /* Preview Assets.xcassets */; };
+		DF7831DB2BFCD2FF00AC89EB /* TodoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7831DA2BFCD2FF00AC89EB /* TodoListView.swift */; };
+		DF7831DD2BFCD41300AC89EB /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7831DC2BFCD41300AC89EB /* ItemView.swift */; };
+		DF7831DF2BFCD42C00AC89EB /* TodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7831DE2BFCD42C00AC89EB /* TodoItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DF7831C42BFCD20F00AC89EB /* TodoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF7831C72BFCD20F00AC89EB /* TodoListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListApp.swift; sourceTree = "<group>"; };
-		DF7831C92BFCD20F00AC89EB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DF7831CB2BFCD21100AC89EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF7831CE2BFCD21100AC89EB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DF7831DA2BFCD2FF00AC89EB /* TodoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListView.swift; sourceTree = "<group>"; };
+		DF7831DC2BFCD41300AC89EB /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
+		DF7831DE2BFCD42C00AC89EB /* TodoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +56,9 @@
 			isa = PBXGroup;
 			children = (
 				DF7831C72BFCD20F00AC89EB /* TodoListApp.swift */,
-				DF7831C92BFCD20F00AC89EB /* ContentView.swift */,
+				DF7831D52BFCD22000AC89EB /* Helpers */,
+				DF7831D62BFCD24600AC89EB /* Model */,
+				DF7831D72BFCD27000AC89EB /* Views */,
 				DF7831CB2BFCD21100AC89EB /* Assets.xcassets */,
 				DF7831CD2BFCD21100AC89EB /* Preview Content */,
 			);
@@ -65,6 +71,30 @@
 				DF7831CE2BFCD21100AC89EB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DF7831D52BFCD22000AC89EB /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		DF7831D62BFCD24600AC89EB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DF7831DE2BFCD42C00AC89EB /* TodoItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DF7831D72BFCD27000AC89EB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DF7831DA2BFCD2FF00AC89EB /* TodoListView.swift */,
+				DF7831DC2BFCD41300AC89EB /* ItemView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +167,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF7831CA2BFCD20F00AC89EB /* ContentView.swift in Sources */,
+				DF7831DB2BFCD2FF00AC89EB /* TodoListView.swift in Sources */,
+				DF7831DD2BFCD41300AC89EB /* ItemView.swift in Sources */,
+				DF7831DF2BFCD42C00AC89EB /* TodoItem.swift in Sources */,
 				DF7831C82BFCD20F00AC89EB /* TodoListApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
