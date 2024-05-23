@@ -26,17 +26,17 @@ struct TodoListView: View {
                 
                 List {
                     
-                    Itemview(
+                    ItemView(
                         title: "Study for Chemistry quiz",
                         done: false
                     )
                     
-                    Itemview(
+                    ItemView(
                         title: "Finish Computer Science assignment",
                         done: true
                     )
                     
-                    Itemview(
+                    ItemView(
                         title: "Go for a run around",
                         done: false
                     )
@@ -70,23 +70,4 @@ struct TodoListView: View {
     TodoListView()
 }
 
-struct Itemview: View {
-    
-    let title: String
-    let done: Bool
-    
-    var body: some View {
-        Label(
-            title: {
-                Text(
-                    title
-                )
-            },
-            icon: {
-                Image(
-                    systemName: done == true ? "checkmark.circle" : "circle"
-                )
-            }
-        )
-    }
-}
+
