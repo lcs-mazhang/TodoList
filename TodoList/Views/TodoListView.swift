@@ -26,32 +26,25 @@ struct TodoListView: View {
                 
                 List {
                     
-                    Label(
-                    title: {
-                        Text("study for Chemistry quiz")
-                    }, icon: {
-                        Image(systemName: "circle")
-                    }
-                )
+                    Itemview(
+                        title: "Study for Chemistry quiz",
+                        done: false
+                    )
                     
-                    Label(
-                     title: {
-                         Text("Finish Computer Science assignment")
-                     }, icon: {
-                         Image(systemName: "circle")
-                     }
-                 )
+                    Itemview(
+                        title: "Finish Computer Science assignment",
+                        done: true
+                    )
                     
-                    Label(
-                     title: {
-                         Text("Go for a run around campus")
-                     }, icon: {
-                         Image(systemName: "circle")
-                     }
-                 )
-                
+                    Itemview(
+                        title: "Go for a run around",
+                        done: false
+                    )
+                    
                 }
-                .searchable(text:$searchText)
+                .searchable(
+                    text:$searchText
+                )
                 
                 HStack {
                     TextField("Enter a to-do item", text:
@@ -75,4 +68,25 @@ struct TodoListView: View {
 
 #Preview {
     TodoListView()
+}
+
+struct Itemview: View {
+    
+    let title: String
+    let done: Bool
+    
+    var body: some View {
+        Label(
+            title: {
+                Text(
+                    title
+                )
+            },
+            icon: {
+                Image(
+                    systemName: done == true ? "checkmark.circle" : "circle"
+                )
+            }
+        )
+    }
 }
