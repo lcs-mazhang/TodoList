@@ -29,8 +29,16 @@ struct TodoListView: View {
                 List(todos) { todo in
                 
                     ItemView(currentItem: todo)
+                    // Delete a to-do item
+                        .swipeActions {
+                            Button(
+                                "delete",role: .destructive,action: {
+                                    delete(todo)
+                                }
+                        )
                     
                 }
+                                }
                 .searchable(
                     text:$searchText
                 )
@@ -65,6 +73,14 @@ struct TodoListView: View {
         
         // Append to the array
         todos.append(todo)
+    }
+    
+    func delete(_ todo: TodoItem) {
+        
+        //Remove the provided to-do item from the array
+        todos.removeAll { currentItem in currentItem.id == todo.id
+            
+        }
     }
     
 }
