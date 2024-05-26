@@ -20,15 +20,16 @@ struct TodoListView: View {
     // The list of to-do items
     @State var todos: [TodoItem] = exampleItems
     
+    
     // Computed properties
     var body: some View {
         NavigationView {
             
             VStack {
                 
-                List(todos) { todo in
+                List($todos) { $todo in
                 
-                    ItemView(currentItem: todo)
+                    ItemView(currentItem: $todo)
                     // Delete a to-do item
                         .swipeActions {
                             Button(
@@ -38,6 +39,7 @@ struct TodoListView: View {
                         )
                     
                 }
+
                                 }
                 .searchable(
                     text:$searchText
