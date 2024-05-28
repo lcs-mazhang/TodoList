@@ -22,13 +22,12 @@ struct TodoListView: View {
     @Environment(\.modelContext) var modelContext
     
     // The list of to-do items
-    @Query var todos: [TodoItem] = exampleItems
+    @Query var todos: [TodoItem]
     
     
     // Computed properties
     var body: some View {
         NavigationView {
-            
             VStack {
                 
                 List {
@@ -58,7 +57,9 @@ struct TodoListView: View {
                 
             }
             .navigationTitle("To do")
-            
+            .onAppear {
+                printCommandToOpenDatabaseFile()
+            }
         }
     }
     
@@ -87,8 +88,9 @@ struct TodoListView: View {
     
 }
 
-//#Preview {
-//    TodoListView()
-//}
+#Preview {
+    TodoListView()
+        .modelContainer(TodoItem.preview)
+}
 
 
