@@ -14,6 +14,7 @@
 		DF7831DB2BFCD2FF00AC89EB /* TodoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7831DA2BFCD2FF00AC89EB /* TodoListView.swift */; };
 		DF7831DD2BFCD41300AC89EB /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7831DC2BFCD41300AC89EB /* ItemView.swift */; };
 		DF7831DF2BFCD42C00AC89EB /* TodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7831DE2BFCD42C00AC89EB /* TodoItem.swift */; };
+		DF9BCA642C0619760095AC24 /* TodoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9BCA632C0619760095AC24 /* TodoListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		DF7831DA2BFCD2FF00AC89EB /* TodoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListView.swift; sourceTree = "<group>"; };
 		DF7831DC2BFCD41300AC89EB /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
 		DF7831DE2BFCD42C00AC89EB /* TodoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItem.swift; sourceTree = "<group>"; };
+		DF9BCA632C0619760095AC24 /* TodoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +40,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DF3D98292C0618AC00E8124F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DF9BCA632C0619760095AC24 /* TodoListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		DF7831BB2BFCD20F00AC89EB = {
 			isa = PBXGroup;
 			children = (
@@ -61,6 +71,7 @@
 				DF7831D52BFCD22000AC89EB /* Helpers */,
 				DF7831D62BFCD24600AC89EB /* Model */,
 				DF7831D72BFCD27000AC89EB /* Views */,
+				DF3D98292C0618AC00E8124F /* ViewModel */,
 				DF7831CB2BFCD21100AC89EB /* Assets.xcassets */,
 				DF7831CD2BFCD21100AC89EB /* Preview Content */,
 			);
@@ -174,6 +185,7 @@
 				DF7831DD2BFCD41300AC89EB /* ItemView.swift in Sources */,
 				DF7831DF2BFCD42C00AC89EB /* TodoItem.swift in Sources */,
 				DF3D98282C03D44B00E8124F /* Functions.swift in Sources */,
+				DF9BCA642C0619760095AC24 /* TodoListViewModel.swift in Sources */,
 				DF7831C82BFCD20F00AC89EB /* TodoListApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
